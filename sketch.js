@@ -21,13 +21,13 @@ function foodLocation() {
 }
 
 function touchStarted() {
-    if(mouseY < height/4 && snake.getDirY() !== 1) { // up
+    if(mouseY < height/3 && snake.getDirY() !== 1) { // up
         snake.setDir(0, -1);
-    } else if(mouseY > 3/4*height && snake.getDirY() !== -1) { // down
+    } else if(mouseY > 2/3*height && snake.getDirY() !== -1) { // down
         snake.setDir(0, 1);
-    } else if(mouseX < width/4 && snake.getDirX() !== 1){ // left
+    } else if(mouseX < width/3 && snake.getDirX() !== 1){ // left
         snake.setDir(-1, 0);
-    } else if(mouseX > 3/4*width && snake.getDirX() !== -1) { // right
+    } else if(mouseX > 2/3*width && snake.getDirX() !== -1) { // right
         console.log(snake.getDirX())
         snake.setDir(1, 0);
     }
