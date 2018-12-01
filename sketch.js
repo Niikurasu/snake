@@ -1,11 +1,11 @@
 let snake;
-let rez = 20;
+let rez = 50;
 let food;
 let w;
 let h;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
   w = floor(width / rez);
   h = floor(height / rez);
   frameRate(5);
