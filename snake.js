@@ -9,10 +9,18 @@ class Snake {
     }
     
     setDir(x, y) {
-        this.xdir = x;
+      this.xdir = x;
       this.ydir = y;
     }
+
+    getDirX() {
+      return this.xdir;
+    }
     
+    getDirY() {
+      return this.ydir;
+    }
+
     update() {
         let head = this.body[this.body.length-1].copy();
       this.body.shift();
